@@ -68,6 +68,23 @@ You are given an array `nums` representing the data status of the set S after th
  
  ```swift
  
+let nums = [1,2,2,4]
+
+var count = 1
+var empty = [Int]()
+    
+    for number in nums {
+        
+        if count == number {
+            print("Count is \(count),Number is \(number)")
+            count += 1
+        } else {
+            print("Count is \(count),Number is \(number)")
+        empty = [number, count]
+            break
+        }
+    }
+    print(empty)
  
  ```
 
