@@ -48,7 +48,7 @@ if alphabet.isSubset(of: rootString) {
  ```
 
 
-## Question 3
+## Question 3 √
 
 The set S originally contains numbers from 1 to n in ascending order. Unfortunately, due to the data error, one of the numbers in the set was duplicated to another number in the set. This results in the repetition of one number and loss of another number in the set.
 
