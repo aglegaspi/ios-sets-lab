@@ -65,9 +65,14 @@ You are given an array `nums` representing the data status of the set S after th
  Example 3:
  Input: `nums = [2,2]`
  Output: `[2,1]`
+ 
+ ```swift
+ 
+ 
+ ```
 
 
-## Question 4
+## Question 4 √
 
 Given the 4 arrays of Ints below, create a new array, sorted in ascending order, that contains all the values without duplicates.
 
@@ -76,10 +81,14 @@ let arr1 = [2, 4, 5, 6, 8, 10, 12]
 let arr2 = [1, 2, 3, 4, 5, 6]
 let arr3 = [5, 6, 7, 8, 9, 10, 11, 12]
 let arr4 = [1, 3, 4, 5, 6, 7, 9]
+
+let unionOfSets = Set(arr1).union(Set(arr2)).union(Set(arr3)).union(Set(arr4)).sorted()
+print(unionOfSets)
+
 ```
 
 
-## Question 5
+## Question 5 √
 
 Perform the following set operations on the lists below:
 
@@ -91,10 +100,24 @@ Perform the following set operations on the lists below:
 ```swift
 let list1: Set = [1, 3, 4, 6, 2, 7, 9]
 let list2: Set = [3, 7, 13, 10, 4]
+
+//1. Find the intersection and print the result
+print(list1.intersection(list2))
+
+//2. Find the symmetric difference and print the result
+print(list1.symmetricDifference(list2))
+
+//3. Find the union and print the result
+print(list1.union(list2))
+
+//4. What is the outcome of subtracting `list2` from `list1`? Print the result
+print(list1.subtracting(list2))
+
+
 ```
 
 
-## Question 6
+## Question 6 √
 
 What output will be produced by the code below? Select one answer.
 
@@ -109,16 +132,11 @@ spaceships.insert("Serenity")
 print(spaceships.count)
 ```
 
-- 3
-- 4
-- Nothing will be output
-- 0
 - This code will not compile
-- 1
-- This code will compile but crash
 
 
-## Question 7
+
+## Question 7 √
 
 What output will be produced by the code below?
 
@@ -138,8 +156,5 @@ if spaceships1.isSubset(of: spaceships2) {
 }
 ```
 
-- This code will compile but crash
-- "This is not a subset"
 - This code will not compile
-- "This is a subset"
-- Nothing will be output
+
