@@ -3,7 +3,7 @@
 Fork and clone this repo. On your fork, answer and commit the follow questions. When you are finished, submit the link to your repo on Canvas.
 
 
-## Question 1
+## Question 1 √
 
 Ms. Gabriel Williams is a botany professor at District College. One day, she asked her student Mickey to compute the average of all the plants with distinct heights in her greenhouse.
 
@@ -13,13 +13,39 @@ Input: heights of trees below:
 Output:
 `169.375`
 
+```swift
 
-## Question 2
+let heightsOfTrees: Array = [161, 182, 161, 154, 176, 170, 167, 171, 170, 174]
+let uniqueTreeHeights = Set(heightsOfTrees)
+var sumOfHeights: Double = 0.00
+
+for height in uniqueTreeHeights {
+sumOfHeights += Double(height)
+}
+print(sumOfHeights/8.0)
+
+```
+
+## Question 2 √
 
 Determine if a String is a pangram. A pangram is a string that contains every letter of the alphabet at least once.
 
  e.g `"The quick brown fox jumps over the lazy dog"` is a pangram
  e.g `"The quick brown fox jumped over the lazy dog"` is NOT a pangram
+ 
+ ```swift
+ 
+let rootString = Set("The quick brown fox jumps over the lazy dog")
+let alphabet = Set("abcdefghijklmnopqrstuvwxyz")
+
+if alphabet.isSubset(of: rootString) {
+    print("This is a pangram")
+} else {
+    print("This is NOT a pangram")
+}
+
+ 
+ ```
 
 
 ## Question 3
